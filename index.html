@@ -1,0 +1,16 @@
+<html>
+    <body>
+        <p>Divrei Chazal</p>
+        <p></p>
+        <p>This application works by finding the 10 words before and after the specified tana/amora, for every reference to that tana/amora in Masekehet Berakhot. The distribution of
+        words is then used to generate a "Word Cloud" where the magnitude of each word reflects the relative frequency of that word. This tool is useful for uncovering stylistic differences
+        between tanaim/amoraim as well as differences in content. Specifically, more frequently references to "amar" may correspond to a tana/amora who speaks more than asks questions.
+        Additionally, the prominence of certain topics will vary from sage to sage.
+        <p></p>
+        <p>Enter the name of a tana or amora in Hebrew below</p>
+        <form method="post" action="/chacham">
+            <p><input name="rav_name" /></p>
+            <p><input type="submit" value="Generate world cloud" /></p>
+        </form>
+    </body>
+</html>
