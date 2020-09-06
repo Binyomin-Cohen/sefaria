@@ -123,6 +123,7 @@ def context_words(n):
     pattern = n
     r = re.search(pattern, text, re.IGNORECASE)
     output = []
+    trim_words = ['אמר', 'דאמר', 'אמר ליה']
     if r:
         while text:
             before, match, text = text.partition(pattern)
@@ -137,7 +138,9 @@ def context_words(n):
                 output_flat = []
                 for e in output:
                     output_flat += e
-    return(output_flat)
+             
+                final_output = [i for i in output_flat if i not in trim_words] 
+    return(final_output)
 
 for i,r in enumerate(rav_df['rav_names']):
     rav_df.at[i,'context_words'] = context_words(r)
