@@ -1,0 +1,9 @@
+Amud Anan: Project Description
+
+The purpose of this script is to return a word cloud showing words in the immedate context of tanaim and amoraim in Masekhet Berakhot. Specifically, the script works by locating all references to a pre-defined list of tanaim and amoraim and collects the 10 words before and after each reference. Several extremely common words (Amar, D'Amar, Amar leh) are removed to shed more light on substantive words for each sage. Word clouds are then generated for each sage reflecting the collection of words in 
+
+
+The value of this world cloud is in showing and comparing patterns of words associated with sages in the Talmud in a visually intuitive way. Future versions of this script would:
+- Further refine the list of filler words to be removed
+- Enrich the dataset of sages by adding time (approximate era) and location (as granular as possible) data for each sage 
+- Design a feature where a user could search for a specific word and see how that word is referenced spatially and temporally by sages  
